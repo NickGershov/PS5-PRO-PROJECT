@@ -1,0 +1,221 @@
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: hsl(240, 10%, 3.9%);
+  background-color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 20px;
+  background: white;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.badge {
+  display: inline-block;
+  background: #f0fbf3;
+  color: hsl(142, 72%, 29%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.page-header h1 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.page-header p {
+  font-size: 16px;
+  color: rgb(113, 113, 122);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 20px;
+  background: hsl(240, 4.8%, 95.9%);
+  border-radius: 10px;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(240, 5.9%, 10%);
+  transition: 0.3s;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+}
+
+.tab-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tab-button:hover {
+  color: hsl(142, 72%, 29%);
+}
+
+.tab-button.active-tab {
+  background: hsl(0, 0%, 100%);
+  color: hsl(142, 72%, 29%);
+  border-bottom: none;
+}
+
+.tab-content {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.tab-panel {
+  display: none;
+  padding: 15px;
+}
+
+.tab-panel.active-tab {
+  display: block;
+}
+
+.icon-container {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-button .material-symbols-outlined {
+  font-size: 32px;
+}
+
+.tab-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.manual-container,
+.smart-container{
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #98bb9c;
+  margin-bottom: 10px;
+}
+
+#power-icon,
+#smart-power-icon,
+#manual-fan-icon,
+#manual-light-icon{
+  align-items: center;
+  justify-content: center;
+  color: #202022;
+}
+
+#duration-icon{
+  align-items: center;
+  justify-content: center;
+  color: #f7ac2c;
+}
+
+.moisture-icon,
+.humidity-icon,
+.target-moisture-icon{
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+}
+
+.soil-moisture-icon{
+  align-items: center;
+  justify-content: center;
+  color: #05984f;
+}
+
+.manual-power,
+.manual-fan,
+.manual-light,
+.smart-power,
+.duration-container,
+.target-soil-moisture-container{
+  justify-content: space-between;
+  display: flex;
+}
+
+
+.smart-inputs{
+  justify-content: space-between;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

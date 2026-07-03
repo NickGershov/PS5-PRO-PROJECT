@@ -1,0 +1,41 @@
+.nav-css {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 50px 10px 50px;
+}
+
+.nav-css div div {
+    width: 100%;
+}
+
+.navbar-nav span{
+    font-size: 18px;
+}
+
+.navbar-nav a{
+    background-color: #ffffff;
+    border-radius: 75px;
+    transition: all 0.3s ease-in-out;
+    color: hsl(240, 5.9%, 10%);
+    margin-left: 10px;
+}
+
+.navbar-nav a:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f5;
+}
+
+.nav-a-css {
+    margin-right: auto;
+}
+
+.icon-brand {
+    font-size: 30px;
+    color: green;
+}
+
+.nav-css .active{
+    background-color: #3b7d43;
+    color: #ffffff;
+}

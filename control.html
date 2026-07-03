@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="./css/control.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light nav-css">
+    <span class="material-symbols-outlined icon-brand">water_drop</span>
+    <a class="navbar-brand" href="index.html">EcoFlow Solutions</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="monitor-nav" class="nav-item nav-link" href="monitor.html" style="display: none;"><span
+            class="material-symbols-outlined"> monitor </span>Monitor</a>
+        <a id="control-nav" class="nav-item nav-link nav-a-css active" href="control.html" style="display: none;"><span
+            class="material-symbols-outlined"> valve </span> Controller </a>
+        <a id="login-nav" class="nav-item nav-link" href="login.html" style="display: none;"><span
+            class="material-symbols-outlined"> login </span>Login </a>
+        <a id="profile-nav" class="nav-item nav-link" href="profile.html" style="display: none;">
+          <span class="material-symbols-outlined"> person </span> Profile </a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main class="container">
+    <div class="page-header">
+      <div class="badge">System Control</div>
+      <h1>Irrigation Control Center</h1>
+      <p>Manage your irrigation system with manual or smart controls, and set up plant profiles for optimal
+        growing conditions.</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-button active-tab" onclick="switchTab(event, 'manual')">
+        <span class="material-symbols-outlined icon-container"> instant_mix </span>
+        Manual Control
+      </button>
+      <button class="tab-button" onclick="switchTab(event, 'smart')">
+        <span class="material-symbols-outlined icon-container"> memory </span>
+        Smart Control
+      </button>
+
+    </div>
+
+    <div class="tab-content">
+      <div id="manual" class="tab-panel active-tab">
+        <h2>Manual Control</h2>
+        <p>Control irrigation manually by adjusting settings.</p>
+
+        <h3>
+          <label for="manual-control-toggle" class="mr-5">Activate Manual Control </label>
+          <input type="checkbox" id="manual-control-toggle">
+        </h3>
+        <div class="manual-container">
+          <div class="manual-power">
+            <div>
+              <span id="power-icon" class="material-symbols-outlined"> power_settings_new</span>
+              <label for="manual-power-toggle">Power </label>
+            </div>
+            <input type="checkbox" id="manual-power-toggle">
+          </div>
+          <div>
+            <div class="duration-container">
+              <div>
+                <span id="duration-icon" class="material-symbols-outlined"> schedule</span>
+                <span>Duration </span>
+              </div>
+              <span id="durationValue"></span>
+            </div>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="300" value="30" class="slider" id="durationRange">
+            </div>
+          </div>
+          <div>
+            <span class="material-symbols-outlined moisture-icon"> humidity_mid </span>
+            <span class="soilMoistureValue">Current Soil Moisture 45%</span>
+          </div>
+        </div>
+
+
+        <div class="manual-container">
+          <div class="manual-fan">
+            <div>
+              <span id="manual-fan-icon" class="material-symbols-outlined"> mode_fan_off</span>
+              <label for="manual-fan-toggle">Fan </label>
+            </div>
+            <input type="checkbox" id="manual-fan-toggle">
+          </div>
+          <div class="manual-light">
+            <div>
+              <span id="manual-light-icon" class="material-symbols-outlined"> light_off</span>
+              <label for="manual-light-toggle">Light </label>
+            </div>
+            <input type="checkbox" id="manual-light-toggle">
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div id="smart" class="tab-panel">
+        <h2>Smart Control</h2>
+        <p>Automate irrigation based on weather conditions.</p>
+        <h3>
+          <label for="smart-control-toggle" class="mr-5">Activate Smart Control </label>
+          <input type="checkbox" id="smart-control-toggle">
+        </h3>
+        <div class="smart-container">
+          
+          
+          <div>
+            <span class="material-symbols-outlined soil-moisture-icon"> humidity_mid </span>
+            <label>Soil Moisture Range</label>
+            <div class="smart-inputs">
+              <input id="soil-low-target" type="number" placeholder="low" min="0" max="100">
+              --
+              <input id="soil-high-target" type="number" placeholder="high" min="0" max="100">
+            </div>
+          </div>
+
+          <div>
+            <span class="material-symbols-outlined humidity-icon"> humidity_mid </span>
+            <label>Humidity Range</label>
+            <div class="smart-inputs">
+              <input id="humidity-low-target" type="number" placeholder="low" min="0" max="100">
+              --
+              <input id="humidity-high-target" type="number" placeholder="high" min="0" max="100">
+            </div>
+          </div>
+
+
+          <div class="smart-power">
+            <div>
+              <span id="smart-power-icon" class="material-symbols-outlined mt-3"> sync</span>
+              <label for="smart-power-toggle">Update Parameters</label>
+            </div>
+            <input type="checkbox" id="smart-power-toggle">
+          </div>
+          
+          
+          <div>
+            <span class="material-symbols-outlined moisture-icon"> humidity_mid </span>
+            <span class="soilMoistureValue">Current Soil Moisture 45%</span>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+    </div>
+  </main>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database-compat.js"></script>
+
+  <script src="js/firebase_utils.js"></script>
+  <script src="./js/control.js"></script>
+</body>
+
+</html>

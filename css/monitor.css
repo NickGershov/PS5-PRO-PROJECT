@@ -1,0 +1,92 @@
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: hsl(240, 10%, 3.9%); 
+  background-color: #fafcfa;
+  font-weight: bold;  
+  margin: 0;
+  padding: 0;
+}
+
+.sensor-container {
+  background-color: #fafcfa;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: #f0fbf3;
+  color: hsl(142, 72%, 29%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.sensor-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sensor-header h2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.sensor-header p {
+  font-size: 16px;
+  color: rgb(113, 113, 122);
+}
+
+.sensor-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid #f1f1f2;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sensor-box:hover {
+  background-color: #fbfbfb;
+  border-color: #e4e4e7;
+}
+
+.sensor-box.active {
+  background-color: #f5f8f5;
+  border-color: #98bb9c;
+}
+
+.sensor-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #444;
+}
+
+.sensor-data .material-symbols-outlined {
+  font-size: 24px;
+  margin-right: 8px; 
+}
+
+.icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: #f0fbf3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container span{
+  font-size: 48px;
+  color: green;
+}
+
+#myChart {
+  height: 500px !important;
+}

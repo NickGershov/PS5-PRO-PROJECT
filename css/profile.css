@@ -1,0 +1,111 @@
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: black;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.profile-container {
+    margin-top: 50px;
+    padding: 20px;
+    color: black;
+    background-color: #ffffff;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.page-header-container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.page-header {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logout-div {
+    display: inline-block;
+}
+
+.badge {
+    background: #f0fbf3;
+    color: hsl(142, 72%, 29%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    font-size: 16px;
+    color: #71717a;
+}
+
+.profile-info {
+    font-weight: 400;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e4e4e7;
+    color: black;
+    padding: 20px;
+}
+
+.profile-info .material-symbols-outlined{
+    color: #157f3c;
+}
+
+
+.profile-info-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.profile-info-fullname,
+.profile-info-email {
+    display: block;
+    color: #71717a;
+    width: 50%;
+}
+
+.profile-info-content #username,
+.profile-info-content #email {
+    color: black;
+
+}
+
+.profile-info h2 {
+    font-size: 24px;
+}
+
+.profile-info p {
+    font-size: 16px;
+}
+
+.logout-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #09090b;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #deebe3;
+    color: #137658;
+}
+
+.logout-div .material-symbols-outlined {
+    font-size: 16px;
+}

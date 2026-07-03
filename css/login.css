@@ -1,0 +1,120 @@
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #1a1a2e;
+    background-color: #fafcfa;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333333;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 0;
+}
+
+.card-header .icon {
+    font-size: 48px;
+    color: #157f3c;
+    margin-bottom: 10px;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-header p {
+    color: #71717a;
+    font-size: 14px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    background: #f0f0f0;
+    color: #333333;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    font-size: 12px;
+    color: #4e7329;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.card-footer {
+    border-top: 0;
+    margin-top: 20px;
+    background-color: #ffffff; /
+}
+
+.card-footer button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #157f3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-footer button:hover {
+    background: #186233;
+}
+
+.card-footer p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #71717a;
+}
