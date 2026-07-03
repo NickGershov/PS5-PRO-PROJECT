@@ -1,11 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCERRF_GCaj6A-Y0WkmNQNunezzxzQ4ww4",
-    authDomain: "esp32-firebase-bedd3.firebaseapp.com",
-    databaseURL: "https://esp32-firebase-bedd3-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "esp32-firebase-bedd3",
-    storageBucket: "esp32-firebase-bedd3.firebasestorage.app",
-    messagingSenderId: "378963646414",
-    appId: "1:378963646414:web:6078395ca3609b8145fd9f"
+  apiKey: "AIzaSyBRvwYcTzU5ZtGSCPBfIAkfODXqeYmDNac",
+  authDomain: "hashkaya.firebaseapp.com",
+  databaseURL: "https://hashkaya-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "hashkaya",
+  storageBucket: "hashkaya.firebasestorage.app",
+  messagingSenderId: "266345424191",
+  appId: "1:266345424191:web:fea95328a50e7ae788df8a",
+  measurementId: "G-0ZJF1XS4WE"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
